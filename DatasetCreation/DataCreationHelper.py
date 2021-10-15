@@ -139,7 +139,7 @@ COCO_CATEGORIES = [
 ]
 
 CUSTOM_CATEGORIES = [
-  {"color": [220, 20, 60], "isthing": 0, "id": 1, "name": "misc"},
+    {"color": [220, 20, 60], "isthing": 0, "id": 1, "name": "misc"},
 	{"color": [58, 41, 149], "isthing": 0, "id": 2, "name": "water"},
 	{"color": [106, 154, 176], "isthing": 0, "id": 3, "name": "ground"},
 	{"color": [64, 170, 64], "isthing": 0, "id": 4, "name": "solid"},
@@ -148,11 +148,11 @@ CUSTOM_CATEGORIES = [
 	{"color": [193, 0, 92], "isthing": 0, "id": 7, "name": "structural"},
 	{"color": [150, 100, 100], "isthing": 0, "id": 8, "name": "building"},
 	{"color": [217, 17, 255], "isthing": 0, "id": 9, "name": "food"},
-  {"color": [255, 255, 128], "isthing": 0, "id": 10, "name": "textile"},
-  {"color": [146, 112, 198], "isthing": 0, "id": 11, "name": "furniture"},
+    {"color": [255, 255, 128], "isthing": 0, "id": 10, "name": "textile"},
+    {"color": [146, 112, 198], "isthing": 0, "id": 11, "name": "furniture"},
 	{"color": [183, 121, 142], "isthing": 0, "id": 12, "name": "window"},
 	{"color": [218, 88, 184], "isthing": 0, "id": 13, "name": "floor"},
 	{"color": [146, 139, 141], "isthing": 0, "id": 14, "name": "ceiling"},
 	{"color": [137, 54, 74], "isthing": 0, "id": 15, "name": "wall"},
-  {"color": [168, 171, 172], "isthing": 0, "id": 16, "name": "rawmaterial"},
+    {"color": [168, 171, 172], "isthing": 0, "id": 16, "name": "rawmaterial"},
 ]
