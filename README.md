@@ -5,7 +5,7 @@ The aim of this project is to train [DETR](https://github.com/facebookresearch/d
 
 Let us now understand how DETR works and try to answer few questions.
 
-- [Understanding DETR](./Part1/DetrExplanation)
+- [Understanding DETR](./Part1/DetrExplanation.md)
 - [Few questions to consider for Panoptic segmenation training](./Part1/README.md)
 
 
