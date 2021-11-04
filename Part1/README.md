@@ -2,15 +2,11 @@
 
 We train DETR to predict boxes around both stuff and things classes on construction dataset, using the object detection model. Predicting boxes is required for the training to be possible, since the Hungarian matching is computed using distances between boxes. We also add a mask head which predicts a binary mask for each of the predicted boxes, see Figure below. 
 
-
-
-<p align="center" style="padding: 10px">
-    <img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Capstone/blob/master/Images/panoptic_head.jpg?raw=true" width =500>
+   <p align="center" style="padding: 10px">
+    <img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Capstone/blob/main/Images/panoptic_head.jpg?raw=true" width =1000>
     <br>
-    <em style="color: grey">The figure gives an illustration of the panoptic head. A binary mask is generated in parallel for each detected object, then the masks are merged using pixel-wise argmax. </em>
-</p> 
-
-
+    <em style="color: grey">The figure gives an illustration of the panoptic head. A binary mask is generated in parallel for each detected object, then the masks are merged using pixel-wise argmax.</em>
+  </p> 
 
 The mask head takes as input, the output of transformer decoder for each object and computes multi-head (with M heads) attention scores of this
 embedding over the output of the encoder, generating M attention heatmaps per object in a small resolution. To make the final prediction and increase the resolution, an FPN-like architecture is used. The final resolution of the masks has stride 4 and each mask is supervised independently using the DICE/F-1 loss and Focal loss. 
