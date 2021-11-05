@@ -12,7 +12,7 @@ Let us now understand how DETR works and try to answer few questions.
 
 ## Data preparation
 
-
+[Click here](./Dataset/README.md)
 
 ## Training
 
@@ -47,9 +47,9 @@ Segmentation Metric: (Panoptic, Segmentation, Recognition Quality) after trainin
 ```
           |    PQ     SQ     RQ     N
 --------------------------------------
-All       |  51.0   78.5   58.3    61
-Things    |  60.1   82.6   68.1    46
-Stuff     |  22.9   66.1   28.2    15
+All       |  53.1   80.0   60.7    61
+Things    |  61.6   82.9   69.6    46
+Stuff     |  27.0   71.2   33.5    15
 ```
 
 

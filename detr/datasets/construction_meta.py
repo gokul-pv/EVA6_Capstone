@@ -535,7 +535,7 @@ INFO = {
     "url": "https://drive.google.com/file/d/1IsK268zLnXB2Qq0X2LgNDwBZRuVwvjRx/view?usp=sharing",
     "version": "1.0.0",
     "year": 2021,
-    "contributor": "gokul",
+    "contributor": "TSAI",
     "date_created": datetime.datetime.utcnow().isoformat(" "),
 }
 
