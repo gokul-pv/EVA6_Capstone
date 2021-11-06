@@ -6,13 +6,13 @@ The aim of this project is to train [DETR](https://github.com/facebookresearch/d
 Let us now understand how DETR works and try to answer few questions.
 
 - [Understanding DETR](./Part1/DetrExplanation.md)
-- [Few questions to consider for Panoptic segmenation training](./Part1/README.md)
+- [Points to consider for Panoptic segmenation training](./Part1/README.md)
 
 
 
-## Data preparation
+## Dataset preparation
 
-[Click here](./Dataset/README.md)
+[Click here](./DatasetCreation/README.md)
 
 ## Training
 
