@@ -70,7 +70,7 @@ There are even tools built specifically to work with datasets in COCO format, e.
 
 ### Basic structure and common elements
 
-File format used by COCO annotations is JSON, which has dictionary (key-value pairs inside braces, `{…}`) as a top value. It can also have lists (ordered collections of items inside brackets, `[…]`) or dictionaries nested inside. Basic structure is as follows:
+File format used by COCO annotations is JSON, which has dictionary (key-value pairs inside braces) as a top value. It can also have lists (ordered collections of items inside brackets) or dictionaries nested inside. Basic structure is as follows:
 
 ```json
 {
@@ -131,12 +131,12 @@ This dictionary contains metadata about the images:
 }
 ```
 
-- `"license"`: the ID of the image license from the `"licenses" `section
-- `"file_name"`: the the name of the file in the images directory
-- `"coco_url"`, `"flickr_url"`: URLs to the online hosted image copy
-- `"height"`, `"width"`: size of image, very handy in low-level languages like C where getting size of matrix is impossible or hard
-- `"date_captured"`: when the photo was taken
-- `"id"`: This is the most important field.  This is the number that is used in `annotations` to identify the image
+- `license`: the ID of the image license from the `licenses`section
+- `file_name`: the the name of the file in the images directory
+- `coco_url`, `lickr_url`: URLs to the online hosted image copy
+- `height`, `width`: size of image, very handy in low-level languages like C where getting size of matrix is impossible or hard
+- `date_captured`: when the photo was taken
+- `id`: This is the most important field.  This is the number that is used in `annotations` to identify the image
 
 ### Categories section
 
@@ -199,15 +199,15 @@ This is the most important section of the dataset, which contains information vi
 }
 ```
 
-- `"segmentation"`: a list of segmentation mask pixels. This is a flattened list of pairs, so you should take the first and the second value (x and y at the  picture), then the third and the fourth etc. to get coordinates. Note that these are not image indices, since they are floating numbers — they are created and compressed by tools like COCO-annotator from raw pixel coordinates
-- `"area"`: number of pixels inside segmentation mask
-- `"iscrowd"`: whether the annotation is for a single object (value 0), or for multiple objects close to each other (value 1). For stuff segmentation this field is always 0 and is ignored
-- `"image_id"`: the ‘id’ field from the ‘images’ dictionary. This value should be used to cross-reference the image with other dictionaries, not the `"id"` field of annotation dictionary!
-- `"bbox"`: bounding box coordinates (top left x, top left y, width,  height) of the rectangle around the object.
-- `"category_id"`: class of the object, corresponding to the `"id"` field in `"categories"`
-- `"id"`: unique identifier for annotation. This is only annotation ID, this does not point to the particular image in other dictionaries!
+- `segmentation`: a list of segmentation mask pixels. This is a flattened list of pairs, so you should take the first and the second value (x and y at the  picture), then the third and the fourth etc. to get coordinates. Note that these are not image indices, since they are floating numbers — they are created and compressed by tools like COCO-annotator from raw pixel coordinates
+- `area`: number of pixels inside segmentation mask
+- `iscrowd`: whether the annotation is for a single object (value 0), or for multiple objects close to each other (value 1). For stuff segmentation this field is always 0 and is ignored
+- `image_id`: the ‘id’ field from the ‘images’ dictionary. This value should be used to cross-reference the image with other dictionaries, not the `id` field of annotation dictionary!
+- `bbox`: bounding box coordinates (top left x, top left y, width,  height) of the rectangle around the object.
+- `category_id`: class of the object, corresponding to the `id` field in `categories`
+- `id`: unique identifier for annotation. This is only annotation ID, this does not point to the particular image in other dictionaries!
 
-While working with crowd images (`"iscrowd": 1`), the `"segmentation"` part may be a little different:
+While working with crowd images (`iscrowd`: 1), the `segmentation` part may be a little different:
 
 ```json
 "segmentation":
