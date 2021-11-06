@@ -154,7 +154,7 @@ This section a bit different for object detection and segmentation task.
 ]
 ```
 
-These are classes of objects that may be detected on images. Each category has a unique `"id"` and they should be in range [1, number of categories]. Categories are  also grouped in “supercategories”, which you may use in your programs e. g. to detect vehicles in general, when you don’t care whether it’s a  bicycle, car or truck.
+These are classes of objects that may be detected on images. Each category has a unique `id` and they should be in range [1, number of categories]. Categories are  also grouped in “supercategories”, which you may use in your programs e. g. to detect vehicles in general, when you don’t care whether it’s a  bicycle, car or truck.
 
 **Panoptic segmentation:**
 
@@ -278,3 +278,9 @@ CUSTOM_CATEGORIES = [
 
 ### Adding masks for stuff category
 
+
+
+## References
+
+- [https://github.com/waspinator/pycococreator](https://github.com/waspinator/pycococreator)
+- [https://patrickwasp.com/create-your-own-coco-style-dataset/](https://patrickwasp.com/create-your-own-coco-style-dataset/)
