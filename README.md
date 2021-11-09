@@ -20,7 +20,9 @@ First the object detection model was trained for 200 epochs using pre-trained we
 
 We train DETR with AdamW setting learning rate in the transformer to 1e-4 and 1e-5 in the backbone. Horizontal flips, scales and crops are used for augmentation. Images are rescaled to have min size 800 and max size 1333. The transformer is trained with dropout of 0.1, and the whole model is trained with grad clip of 0.1.
 
+- ###### Fine-tuning of DETR on construction dataset for Object Detection ([click here](./Detection/README.md))
 
+- ###### Panoptic segmentation training ([click here](./Segmentation/README.md))
 
 ## Results
 

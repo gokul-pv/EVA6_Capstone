@@ -281,7 +281,7 @@ CUSTOM_CATEGORIES = [
 As we already know DETR is trained to predict both stuffs and things categories. We will use pretrained DETR model (`detr_resnet101_panoptic`) to predict these low level stuff category and map them to high level stuff category. Note that some of images may not be present RGB format (gray format and others might  be in RGBN format). So while loading the image we convert them to RGB format with 3 channels.
 
 ```python
-# Read this image and get shape of image
+# Read the image and get the shape
 image_org = Image.open(processing_file).convert('RGB')
 
 try:
@@ -349,7 +349,10 @@ for annotation in mask_original:
 
  After creating new mask, we calculate the area and the bounding box coordinates for the stuff segments by using the [pycococreator](https://github.com/waspinator/pycococreator) tool. The `id` for the annotation is generated using the **IdGenerator** from [panopticapi](https://github.com/cocodataset/panopticapi.git). The [pycococreator](https://github.com/waspinator/pycococreator) tool also helps to convert the COCO panoptic data format to COCO detection format. As we have all the required fields in the right format, we finally dump everything into the json file.
 
-Check out the [Notebook](./construction_dataset_creation_v5.ipynb) for more details.
+Check out the [Notebook](./construction_dataset_creation_v5.ipynb) for more details. Here are the
+
+- [Processed images](https://drive.google.com/file/d/1glNu-wyvRpUVHsPY8PA1Q2G_qUIZbC-o/view?usp=sharing)
+- [Mask images](https://drive.google.com/file/d/1g-UzrPitq6siqSFkRGqazVMjN0vEXOyQ/view?usp=sharing)
 
 ### Example mask image
 
@@ -368,4 +371,6 @@ Once the annotation files are ready, 80-20 split is done to create separate the 
 - [https://patrickwasp.com/create-your-own-coco-style-dataset/](https://patrickwasp.com/create-your-own-coco-style-dataset/)
 - [https://cocodataset.org/#format-data](https://cocodataset.org/#format-data)
 - [https://towardsdatascience.com/getting-started-with-coco-dataset-82def99fa0b8](https://towardsdatascience.com/getting-started-with-coco-dataset-82def99fa0b8)
+
+
 
