@@ -353,6 +353,7 @@ Check out the [Notebook](./construction_dataset_creation_v5.ipynb) for more deta
 
 - [Processed images](https://drive.google.com/file/d/1glNu-wyvRpUVHsPY8PA1Q2G_qUIZbC-o/view?usp=sharing)
 - [Mask images](https://drive.google.com/file/d/1g-UzrPitq6siqSFkRGqazVMjN0vEXOyQ/view?usp=sharing)
+- [Annotations](./annotations)
 
 ### Example mask image
 

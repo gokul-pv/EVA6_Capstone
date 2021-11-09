@@ -1,6 +1,6 @@
 # Fine Tuning of DETR
 
-Here we are going to fine-tune Facebook's DETR (DEtection TRansformer) on the construction dataset (custom dataset) to predict the bounding box around both things and stuff category. We will be using [detr-r50](https://dl.fbaipublicfiles.com/detr/detr-r50-e632da11.pth) to train model. Most of the steps done here are refereed from [this](https://www.youtube.com/watch?v=RkhXoj_Vvr4) beautiful youtube video.
+Here we are going to fine-tune Facebook's DETR (DEtection TRansformer) on the construction dataset (custom dataset) to predict the bounding box around both things and stuff category. We will be using [detr-r50](https://dl.fbaipublicfiles.com/detr/detr-r50-e632da11.pth) to train model. Most of the steps done here are referred from [this](https://www.youtube.com/watch?v=RkhXoj_Vvr4) beautiful youtube video.
 
 **Note**: Fine-tuning is recommended if your dataset has [less than 10k images](https://github.com/facebookresearch/detr/issues/9#issuecomment-635357693). Otherwise, training from scratch would be an option.
 
@@ -179,7 +179,7 @@ IoU metric: bbox
 |          <img src="../Images/aac_blocks_1.jpg"  />           |    <img src="../Images/prediction_bbox_aac_block.png"  />    |
 | <img src="../Images/distribution_transformer_1471.jpg" style="zoom: 10%;" /> | <img src="../Images/prediction_bbox_distribuiton_transformer.png" style="zoom: 80%;" /> |
 |  <img src="../Images/hoist_3637.jpg" style="zoom:150%;" />   | <img src="../Images/prediction_bbox_hoist.png" style="zoom:50%;" /> |
-| <img src="../Images/sanitary_fixtures_6014.jpg" style="zoom:150%;" /> | <img src="../Images/prediction_bbox_sanitary.png" style="zoom: 67%;" /> |
+|     <img src="../Images/sanitary_fixtures_6074.jpg"  />      |    <img src="../Images/prediction_bbox_sanitary.png"  />     |
 | <img src="../Images/wheel_loader_9998.jpg" style="zoom: 67%;" /> | <img src="../Images/prediction_bbox_wheelloader.png" style="zoom:;" /> |
 
 
