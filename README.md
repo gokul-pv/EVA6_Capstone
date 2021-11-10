@@ -54,10 +54,14 @@ Things    |  61.6   82.9   69.6    46
 Stuff     |  27.0   71.2   33.5    15
 ```
 
+Check out the below YouTube link below to see predictions from the trained model
+
+[![Link](https://img.youtube.com/vi/fPUkFKF6qb0/0.jpg)](https://youtu.be/fPUkFKF6qb0)
 
 
 
 ## References
+
 1. [DETR Paper](https://arxiv.org/abs/2005.12872)
 2. [https://www.youtube.com/watch?v=utxbUlo9CyY](https://www.youtube.com/watch?v=utxbUlo9CyY)
 3. [https://wandb.ai/veri/detr/reports/DETR-Panoptic-segmentation-on-Cityscapes-dataset--Vmlldzo2ODg3NjE](https://wandb.ai/veri/detr/reports/DETR-Panoptic-segmentation-on-Cityscapes-dataset--Vmlldzo2ODg3NjE)

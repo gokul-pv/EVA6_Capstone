@@ -24,9 +24,9 @@ torch.save(checkpoint,
         'detr-r50_no_class_head.pth')
 ```
 
-**Step 2:** The next step is to create a custom data loader for the construction dataset. The data loader can be referred from file [detr/datasets/construction.py](https://github.com/adilsammar/detr-fine/blob/main/detr/datasets/construction.py)
+**Step 2:** The next step is to create a custom data loader for the construction dataset. The data loader can be referred from file [detr/datasets/coco.py](https://github.com/facebookresearch/detr/blob/main/datasets/coco.py)
 
-**Step 3:** Update the dataset builder to use our custom_construction dataset file. Go to [detr/datasets/**__init__**.py](https://github.com/adilsammar/detr-fine/blob/main/detr/datasets/__init__.py) and update build_dataset function as below
+**Step 3:** Update the dataset builder to use our custom_construction dataset file. Go to [detr/datasets/**__init__**.py](https://github.com/facebookresearch/detr/blob/main/datasets/__init__.py) and update build_dataset function as below
 
 ```python
 if args.dataset_file == 'custom_construction':
@@ -143,6 +143,8 @@ where [accuracy](https://github.com/facebookresearch/detr/blob/5e66b4cd15b2b182d
 def accuracy(output, target, topk=(1,)):
 """Computes the precision@k for the specified values of k"""
 ```
+
+### Result
 
 After training for 200 epochs, the results are as follows
 
