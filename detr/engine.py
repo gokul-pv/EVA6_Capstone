@@ -12,7 +12,24 @@ import torch
 import util.misc as utils
 from datasets.coco_eval import CocoEvaluator
 from datasets.panoptic_eval import PanopticEvaluator
+from datasets.construction_meta import id2cat
+import matplotlib.pyplot as plt
 
+def log_class_chart(results):
+
+
+    cl = results['per_class']
+
+    plt.figure(figsize=(20, 20), dpi=80)
+    plt.style.use('ggplot')
+    plt.title("Panoptic quality (PQ) for each category.")
+
+    for no in cl.keys():
+      cls = cl[no]
+      plt.barh(id2cat[no], cls['pq'])
+
+    plt.savefig('/content/drive/MyDrive/EVA6/Capstone/outputs_panoptic/pq_per_class_chart.png')
+    plt.show()
 
 def train_one_epoch(model: torch.nn.Module, criterion: torch.nn.Module,
                     data_loader: Iterable, optimizer: torch.optim.Optimizer,
@@ -141,6 +158,7 @@ def evaluate(model, criterion, postprocessors, data_loader, base_ds, device, out
     panoptic_res = None
     if panoptic_evaluator is not None:
         panoptic_res = panoptic_evaluator.summarize()
+    log_class_chart(panoptic_res)
     stats = {k: meter.global_avg for k, meter in metric_logger.meters.items()}
     if coco_evaluator is not None:
         if 'bbox' in postprocessors.keys():

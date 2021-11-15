@@ -172,17 +172,17 @@ IoU metric: bbox
 
 <img src="../Images/detection_error.png" style="zoom:150%;" />
 
-
+ 
 
 ## Few Prediction examples
 
 |                        Original Image                        |                    Predicted Bounding Box                    |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
-|          <img src="../Images/aac_blocks_1.jpg"  />           |    <img src="../Images/prediction_bbox_aac_block.png"  />    |
-| <img src="../Images/distribution_transformer_1471.jpg" style="zoom: 10%;" /> | <img src="../Images/prediction_bbox_distribuiton_transformer.png" style="zoom: 80%;" /> |
-|  <img src="../Images/hoist_3637.jpg" style="zoom:150%;" />   | <img src="../Images/prediction_bbox_hoist.png" style="zoom:50%;" /> |
-|     <img src="../Images/sanitary_fixtures_6074.jpg"  />      |    <img src="../Images/prediction_bbox_sanitary.png"  />     |
-| <img src="../Images/wheel_loader_9998.jpg" style="zoom: 67%;" /> | <img src="../Images/prediction_bbox_wheelloader.png" style="zoom:;" /> |
+| <p align="center" style="padding: 10px"><br/><img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Capstone/blob/main/Images/aac_blocks_1.jpg?raw=true" width =500><br/><br/></p> | <p align="center" style="padding: 10px"><br/><img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Capstone/blob/main/Images/prediction_bbox_aac_block.png?raw=true" width =500><br/><br/></p> |
+| <p align="center" style="padding: 10px"><br/><img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Capstone/blob/main/Images/distribution_transformer_1471.jpg?raw=true" width =300><br/><br/></p> | <p align="center" style="padding: 10px"><br/><img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Capstone/blob/main/Images/prediction_bbox_distribuiton_transformer.png?raw=true" width =400><br/><br/></p> |
+| <p align="center" style="padding: 10px"><br/><img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Capstone/blob/main/Images/hoist_3637.jpg?raw=true" width =500><br/><br/></p> | <p align="center" style="padding: 10px"><br/><img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Capstone/blob/main/Images/prediction_bbox_hoist.png?raw=true" width =500><br/><br/></p> |
+| <p align="center" style="padding: 10px"><br/><img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Capstone/blob/main/Images/sanitary_fixtures_6074.jpg?raw=true" width =350><br/><br/></p> | <p align="center" style="padding: 10px"><br/><img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Capstone/blob/main/Images/prediction_bbox_sanitary.png?raw=true" width =350><br/><br/></p> |
+| <p align="center" style="padding: 10px"><br/><img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Capstone/blob/main/Images/wheel_loader_9998.jpg?raw=true" width =500><br/><br/></p> | <p align="center" style="padding: 10px"><br/><img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Capstone/blob/main/Images/prediction_bbox_wheelloader.png?raw=true" width =500><br/><br/></p> |
 
 
 
