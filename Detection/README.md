@@ -176,6 +176,8 @@ IoU metric: bbox
 
 ## Few Prediction examples
 
+You can find more example predictions [here](../Predictions)
+
 |                        Original Image                        |                    Predicted Bounding Box                    |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | <p align="center" style="padding: 10px"><br/><img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Capstone/blob/main/Images/aac_blocks_1.jpg?raw=true" width =500><br/><br/></p> | <p align="center" style="padding: 10px"><br/><img alt="Forwarding" src="https://github.com/gokul-pv/EVA6_Capstone/blob/main/Images/prediction_bbox_aac_block.png?raw=true" width =500><br/><br/></p> |

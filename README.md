@@ -58,7 +58,18 @@ Check out the below YouTube link below to see predictions from the trained model
 
 [![Link](https://img.youtube.com/vi/fPUkFKF6qb0/0.jpg)](https://youtu.be/fPUkFKF6qb0)
 
+## Conclusion
 
+The project shows that fine tuning can lead to a score of 53 PQ in about 50 epochs. The results are satisfactory. Transformers are good in global reasoning but are computational expensive with long inputs (high resolution images), making difficult to attain good results with small objects. 
+
+Further works include
+
+- explore new image augmentation techniques like RICAP for better detection results
+- reduce leakage of orginial COCO class while creating ground truth. (eg: red areas around wheel loader in [image](./Images/wheel_loader_9996.png))
+- add few images from COCO dataset so that PQ for stuff could be increased
+- Implement Pytorch lightening for faster training
+
+﻿
 
 ## References
 
