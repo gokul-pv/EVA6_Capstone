@@ -67,9 +67,9 @@ Further works include
 - explore new image augmentation techniques like RICAP for better detection results
 - reduce leakage of orginial COCO class while creating ground truth. (eg: red areas around wheel loader in [image](./Images/wheel_loader_9996.png))
 - add few images from COCO dataset so that PQ for stuff could be increased
-- Implement Pytorch lightening for faster training
+- Implement **Spatially Modulated Co-Attention** (SMCA) which is a plug and play module to replace and help achieve faster convergence. Refer this [link](https://arxiv.org/pdf/2108.02404v1.pdf)
+- Explore and implement this paper from [Google](https://ai.googleblog.com/2021/04/max-deeplab-dual-path-transformers-for.html) which would allow to skip the BBox detection and directly train for Panoptic segmentation.
 
-﻿
 
 ## References
 
